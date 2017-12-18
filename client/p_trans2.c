@@ -1,9 +1,12 @@
 #include "p_trans.h"
-#include <p_file.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
 #include <stdio.h>
 #include <string.h>
-#include "clc/p_stu_link.h"
-#include "clc/p_sndrcv.h" 
+#include "../addtions/p_stu_link.h"
+#include "../addtions/p_sndrcv.h" 
 //清理缓存区
 static void clean(void){
 	scanf("%*[^\n]");

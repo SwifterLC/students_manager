@@ -1,2 +1,2 @@
 all :
-	gcc ig/s.c p_trans1.c ig/p_sndrcv.c ig/p_stu_link.c -Lig -lpnet -lpthread
+	gcc s.c p_trans1.c ../addtions/p_sndrcv.c ../addtions/p_stu_link.c -L../addtions -lpnet -lpthread -o s

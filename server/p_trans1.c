@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include <p_file.h>
-#include "ig/p_stu_link.h"
+#include "../addtions/p_stu_link.h"
 #include "p_trans.h"
-#include "ig/p_sndrcv.h"
+#include "../addtions/p_sndrcv.h"
 static void syn(void){
 	link_began(&lk);
-	int fd = open("ig/student.bin",O_WRONLY|O_CREAT|O_TRUNC,0664);
+	int fd = open("student.bin",O_WRONLY|O_CREAT|O_TRUNC,0664);
 	if (-1 == fd){
 		perror("open");
 		exit(-1);
